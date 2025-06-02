@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      const url = new URL(window.location.href);
+      const code = url.searchParams.get("code");
+      if (code) {
+        window.location.href = `woodandstone://patreon-callback?code=${code}`;
+      }
+    </script>
+  </head>
+  <body>
+    Redirecting to the app...
+  </body>
+</html>
